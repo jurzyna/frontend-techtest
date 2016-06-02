@@ -10,7 +10,7 @@ Steps
 -----
 1. Visit the [Shunter Repository](https://github.com/springernature/shunter) and read the documentation
 2. Fork this repo
-3. Part of the Shunter setup has been completed for you. Finish setting up the application
+3. Part of the Shunter setup has been completed for you. Finish setting up the application (not all of the documentation is relevent to this application)
 4. Download and run the [backend application](https://github.com/springernature/frontend-techtest-backend) (no work should be needed in this repository)
 5. Make any changes necessary for the front end to talk to the backend
 6. Amend the template so that data is being used from the backend application
