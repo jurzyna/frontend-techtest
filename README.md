@@ -13,7 +13,7 @@ Before we begin, you'll need to have [Node.js](https://nodejs.org/) installed, t
 Steps
 -----
 1. Fork this repo _(if completing this test remotely)_
-2. Create a branch to work in
+2. Create a branch to work in _(if completing this test remotely)_
 3. Make sure the the correct version of Node.js is installed _(if completing this test remotely)_
 4. Install dependencies with ```npm install``` _(if completing this test remotely)_
 5. Download and run the [backend application](https://github.com/springernature/frontend-techtest-backend) (no work should be needed in this repository)
