@@ -12,7 +12,6 @@ Before we begin, you'll need to have [Node.js](https://nodejs.org/) installed, t
 
 Steps
 -----
-
 1. Fork this repo (if completing this test remotely)
 2. Create a branch to work in
 3. Make sure the the correct version of Node.js is installed (if completing this test remotely)
