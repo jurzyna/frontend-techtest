@@ -16,7 +16,7 @@ Steps
 2. Create a branch to work in _(if completing this test remotely)_
 3. Make sure the the correct version of Node.js is installed _(if completing this test remotely)_
 4. Install dependencies with ```npm install``` _(if completing this test remotely)_
-5. Download, follow the instructions in the README and run the [backend application](https://github.com/springernature/frontend-techtest-backend) (no work should be needed in this repository)
+5. Download the [backend application](https://github.com/springernature/frontend-techtest-backend), then follow the instructions in the README to get it running  (no work should be needed in this repository)
 6. Make any changes in this repository so that it can receive data from the backend application
 7. Add images to the links provided in the example
 8. Using the data provided, create a tooltip for each of the links, that appears when you hover the link
@@ -34,4 +34,3 @@ Acceptance criteria
 8. The principles of Progressive Enhancement must not be violated
 9. Browser support: IE9+, latest stable release of Chrome, Firefox, Safari
 10. Must be easy to maintain
-
