@@ -12,11 +12,18 @@ Before we begin, you'll need to have [Node.js](https://nodejs.org/) installed, t
 
 Steps
 -----
+
+If you are completing this test remotely:
+Fork this repo and then download the fork (because you won't have permission to push a branch up to our repo)
+
+If completing this test on site:
+Fork this repo too?  Gives person a chance to push to their github account and could look back on it later?
+
 1. Fork this repo _(if completing this test remotely)_
 2. Create a branch to work in _(if completing this test remotely)_
 3. Make sure the the correct version of Node.js is installed _(if completing this test remotely)_
 4. Install dependencies with ```npm install``` _(if completing this test remotely)_
-5. Download the [backend application](https://github.com/springernature/frontend-techtest-backend), then follow the instructions in the README to get it running  (no work should be needed in this repository)
+5. Download the [backend application](https://github.com/springernature/frontend-techtest-backend), then follow the instructions in the README to run it (no work should be needed in this repository)
 6. Make any changes in this repository so that it can receive data from the backend application
 7. Add images to the links provided in the example
 8. Using the data provided, create a tooltip for each of the links, that appears when you hover the link
