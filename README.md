@@ -27,11 +27,10 @@ Acceptance criteria
 1. When hovering over the links, a tooltip should appear
 2. Images should appear inline to the left of the links
 3. There must be no duplication of content
-4. There must be no title attribute used - at all
-5. The template should use the data being sent from the backend application
-6. The solution must not interfere with standard browser behaviour
-7. HTML and CSS must validate
-8. The principles of Progressive Enhancement must not be violated
-9. Browser support: IE9+, latest stable release of Chrome, Firefox, Safari
-10. Must be easy to maintain
+4. The template should use the data being sent from the backend application
+5. The solution must not interfere with standard browser behaviour
+6. HTML and CSS must validate
+7. The principles of Progressive Enhancement must not be violated
+8. Browser support: IE9+, latest stable release of Chrome, Firefox, Safari
+9. Must be easy to maintain
 
