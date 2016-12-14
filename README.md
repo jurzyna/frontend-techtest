@@ -13,8 +13,8 @@ Before we begin, you'll need to have [Node.js](https://nodejs.org/) installed, t
 Steps
 -----
 1. Fork this repo
-2. Create a branch to work in
-3. Clone your fork on the command line
+2. Clone your fork on the command line
+3. Create and checkout a branch with your name in it e.g. `johnsmith`
 4. Make sure the the correct version of Node.js is installed
 5. Install dependencies with ```npm install```
 6. Download, follow the instructions in the README and run the [backend application](https://github.com/springernature/frontend-techtest-backend) (no work should be needed in this repository)
