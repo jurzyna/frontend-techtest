@@ -14,13 +14,14 @@ Steps
 -----
 1. Fork this repo
 2. Create a branch to work in
-3. Make sure the the correct version of Node.js is installed
-4. Install dependencies with ```npm install```
-5. Download, follow the instructions in the README and run the [backend application](https://github.com/springernature/frontend-techtest-backend) (no work should be needed in this repository)
-6. Make any changes in this repository so that it can receive data from the backend application
-7. Add images to the links provided in the example
-8. Using the data provided, create a tooltip for each of the links, that appears when you hover the link
-9. Submit a pull request with your changes
+3. Clone your fork on the command line
+4. Make sure the the correct version of Node.js is installed
+5. Install dependencies with ```npm install```
+6. Download, follow the instructions in the README and run the [backend application](https://github.com/springernature/frontend-techtest-backend) (no work should be needed in this repository)
+7. Make any changes in this repository so that it can receive data from the backend application
+8. Add images to the links provided in the example
+9. Using the data provided, create a tooltip for each of the links, that appears when you hover the link
+10. Submit a pull request with your changes
 
 Acceptance criteria
 -------------------
