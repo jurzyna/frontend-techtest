@@ -1,0 +1,82 @@
+// set main global variables
+var springNature;
+var elem = {};
+
+// Vanilla Script way of checinkg if DOM is ready
+var domReady = function(callback) {
+    document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
+};
+
+// Immediately Invoked Function Expression (IIFE) 
+(function() {
+    "use strict";
+    springNature = {
+        // set global DOM elements
+        initDom: function () {
+            elem.tooltips = document.querySelectorAll("[data-tooltip]");
+        },
+        // The Main Tooltip function
+        toolTip: function(){
+            elem.tooltips.forEach(function(tooltip) {
+                // Createing a Wrapper for the tooltip
+                var parent = tooltip.parentNode,
+                    tooltipWrap = document.createElement("span");
+                tooltipWrap.classList.add("tooltip-wrap")
+                parent.insertBefore(tooltipWrap, tooltip);
+                tooltipWrap.appendChild(tooltip);
+
+                // creating a Tooltip container
+                var tooltipContainer = document.createElement("span");
+                tooltipContainer.innerHTML = tooltip.dataset.tooltip;
+                tooltipContainer.classList.add("tooltip-container");
+                tooltipContainer.setAttribute("data-showing", false);
+                tooltipWrap.insertBefore(tooltipContainer, tooltip);
+                
+                // Attaching Mouse events to the tooltip link    
+                tooltip.addEventListener("mouseover", showTooltip);
+                tooltip.addEventListener("mouseout", hideTooltip); 
+                
+            });
+
+            // Runs whem the mouse enters the tooltip
+            function showTooltip(e){
+                var tooltip = e.target.previousSibling;
+                if (!tooltip){
+                    return;
+                }
+                tooltip.setAttribute("data-showing", true);
+
+                // Positioning the elemtent correctly on the screen when off the screem
+                var tooltipLeftOffset = offset(tooltip);
+                if(tooltipLeftOffset < 0){
+                    var tooltipMargin = ( Math.round(Math.abs(tooltipLeftOffset), 0) + 8) + 'px';
+                    tooltip.style.marginLeft = tooltipMargin;
+                    console.log(tooltipMargin);
+                }
+                
+            }
+
+            // Runs whem the mouse leaves the tooltip
+            function hideTooltip(e){
+                var tooltip = e.target.previousSibling;
+                if (!tooltip){
+                    return;
+                }
+                tooltip.setAttribute("data-showing", false);
+                tooltip.style.marginLeft = 0;
+            }
+
+            // Runs when the elemnt is off the screen
+            function offset(el) {
+                var rect = el.getBoundingClientRect(), bodyElt = document.body;
+                return rect.left + bodyElt .scrollLeft;
+            }
+        }
+    };
+
+    // Loading function on DOM Ready
+    domReady(function() {
+        springNature.initDom();
+        springNature.toolTip();
+    });
+})();
